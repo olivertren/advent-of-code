@@ -9,11 +9,11 @@ import numpy as np
 from utils import get_groups, get_input, print_answers
 
 
-def part_one(i):
+def part_one(is_):
     pass
 
 
-def part_two(i):
+def part_two(is_):
     pass
 
 
