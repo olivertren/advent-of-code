@@ -9,46 +9,12 @@ import numpy as np
 from utils import get_groups, get_input, print_answers
 
 
-def part_one(is_):
+def part_one(i_):
     pass
 
 
-def part_two(is_):
+def part_two(i_):
     pass
-
-
-# def part_two(input_):
-#     _initial = []
-#
-#     def _update_current(current, line):
-#         current.append(set(line))
-#
-#     current = _initial
-#     count = 0
-#     for line in input_:
-#         if len(line) == 0:
-#             count += len(current)
-#             current = _initial
-#         else:
-#             _update_current(current, line)
-#     return count
-#
-#
-# def part_one(input_):
-#     _initial = []
-#
-#     def _update_current(current, line):
-#         current.append(set(line))
-#
-#     current = _initial
-#     count = 0
-#     for line in input_:
-#         if len(line) == 0:
-#             count += len(current)
-#             current = _initial
-#         else:
-#             _update_current(current, line)
-#     return count
 
 
 def print_answers_for_input(input_):
