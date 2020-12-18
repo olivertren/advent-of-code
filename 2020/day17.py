@@ -20,11 +20,7 @@ def part_one(i_):
     def adj(x, y, z, c):
         count = 0
         n = [-1, 0, 1]
-        for (
-            i,
-            j,
-            k,
-        ) in itertools.product(n, n, n):
+        for (i, j, k) in itertools.product(n, n, n):
             if i == j == k == 0:
                 continue
             else:
@@ -61,10 +57,7 @@ def part_one(i_):
 
         return c_
 
-    loop = 0
-    loops = 6
-    while loop < loops:
-        loop += 1
+    for i in range(6):
         c = update(c)
 
     return len([k for k, v in c.items() if v == A])
@@ -117,10 +110,7 @@ def part_two(i_):
 
         return c_
 
-    loop = 0
-    loops = 6
-    while loop < loops:
-        loop += 1
+    for i in range(6):
         c = update(c)
 
     return len([k for k, v in c.items() if v == A])
