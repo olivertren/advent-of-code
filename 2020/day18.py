@@ -65,9 +65,9 @@ def eval_from_list(vals, no_paren):
     return value
 
 
-def evaluate(equation):
+def evaluate(equation, no_paren):
     vals = get_vals(equation)
-    return eval_from_list(vals, no_paren1)
+    return eval_from_list(vals, no_paren)
 
 
 def no_paren1(vals):
@@ -90,7 +90,7 @@ def no_paren1(vals):
 def part_one(i_):
     sum_ = 0
     for e in i_:
-        sum_ += evaluate(e)
+        sum_ += evaluate(e, no_paren1)
 
     return sum_
 
@@ -113,15 +113,10 @@ def no_paren2(vals):
     return value
 
 
-def evaluate2(equation):
-    vals = get_vals(equation)
-    return eval_from_list(vals, no_paren2)
-
-
 def part_two(i_):
     sum_ = 0
     for e in i_:
-        sum_ += evaluate2(e)
+        sum_ += evaluate(e, no_paren2)
 
     return sum_
 
