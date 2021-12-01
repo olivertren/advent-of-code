@@ -9,11 +9,11 @@ import numpy as np
 from utils import get_groups, get_input, print_answers
 
 
-def part_one(i_):
+def part_one(ns):
     pass
 
 
-def part_two(i_):
+def part_two(ns):
     pass
 
 
@@ -24,7 +24,8 @@ def print_answers_for_input(input_):
     print_answers(p1, p2)
 
 
-input_ = get_input(f"2020/day{datetime.date.today().day}test")
+today = datetime.date.today()
+input_ = get_input(f"{today.year}/day{today.day}test")
 print("Tests")
 print_answers_for_input(input_)
 
