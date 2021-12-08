@@ -4,8 +4,7 @@ from utils import get_input, print_answers
 
 
 def part_one(ns):
-    c = {1: 2, 4: 4, 7: 3, 8: 7}
-    lens = c.values()
+    lens = [2, 3, 4, 7]
     co = 0
     for n in ns:
         n = n.split(" | ")[1]
@@ -22,7 +21,7 @@ def map_line(n):
     n, m = n.split(" | ")
     n = n.split()
     m = m.split()
-    n = sorted(n, key=lambda x: len(x))
+    n = sorted(n, key=len)
 
     # number - number of letters
     # 1 - 2
