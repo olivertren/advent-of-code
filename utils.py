@@ -12,7 +12,6 @@ def get_input(filename, parse_func=lambda x: x):
 
 
 def get_groups(filename):
-    lines = []
     directory = os.path.dirname(filename)
     filename = os.path.splitext(os.path.basename(filename))[0]
     input_ = ""
@@ -20,6 +19,7 @@ def get_groups(filename):
         for line in f:
             input_ += line
     groups = input_.split("\n\n")
+    groups = [g.strip() for g in groups]
     return groups
 
 
