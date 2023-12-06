@@ -20,13 +20,16 @@ def part_two(ns):
 
 def print_answers_for_input(input_):
     p1 = part_one(input_)
-    p2 = part_two(input_)
+    print_answers(p1)
 
-    print_answers(p1, p2)
+    # p2 = part_two(input_)
+    # print_answers(p2)
+
+    # print_answers(p1, p2)
 
 
 today = datetime.date.today()
-input_ = get_input(f"{today.year}/day{today.day}test")
+input_ = get_input(f"{__file__}test")
 print("Tests")
 print_answers_for_input(input_)
 

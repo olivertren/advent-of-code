@@ -36,4 +36,3 @@ def batched(iterable, n):
         if not chunk:
             return
         yield chunk
-
