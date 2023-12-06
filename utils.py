@@ -1,3 +1,4 @@
+import itertools
 import os
 
 
@@ -26,3 +27,13 @@ def get_groups(filename):
 def print_answers(part_one=None, part_two=None):
     print(f"Part One: {part_one}")
     print(f"Part Two: {part_two}")
+
+
+def batched(iterable, n):
+    iterator = iter(iterable)
+    while True:
+        chunk = list(itertools.islice(iterator, n))
+        if not chunk:
+            return
+        yield chunk
+
