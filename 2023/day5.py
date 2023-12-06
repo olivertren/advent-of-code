@@ -6,8 +6,9 @@ from operator import mul
 
 import numpy as np
 import tqdm
+from more_itertools import batched
 
-from utils import batched, get_groups, get_input, print_answers
+from utils import get_groups, get_input, print_answers
 
 
 def generate_map(text):

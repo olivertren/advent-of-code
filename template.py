@@ -5,9 +5,10 @@ from functools import reduce
 from operator import mul
 
 import numpy as np
+from more_itertools import batched
 from tqdm import tqdm
 
-from utils import batched, get_groups, get_input, print_answers
+from utils import get_groups, get_input, print_answers
 
 
 def part_one(ns):
