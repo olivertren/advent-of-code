@@ -1,4 +1,3 @@
-import datetime
 import itertools
 from collections import Counter, defaultdict, deque
 from functools import reduce
@@ -29,8 +28,7 @@ def print_answers_for_input(input_):
     # print_answers(p1, p2)
 
 
-today = datetime.date.today()
-input_ = get_input(f"{__file__}test")
+input_ = get_input(f"{__file__.split('.py')[0]}test")
 print("Tests")
 print_answers_for_input(input_)
 
